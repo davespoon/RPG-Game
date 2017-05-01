@@ -4,7 +4,7 @@
     {
         private string itemName;
         private string itemDescription;
-        private string itemID;
+        private int itemID;
 
         public enum ItemTypes
         {
@@ -29,7 +29,7 @@
             set { itemDescription = value; }
         }
 
-        public string ItemID
+        public int ItemID
         {
             get { return itemID; }
             set { itemID = value; }
