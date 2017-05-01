@@ -4,7 +4,7 @@
     <unityVersion>5.6.0f3</unityVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <unityProcessId>4680</unityProcessId>
+    <unityProcessId>5236</unityProcessId>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>4</LangVersion>
@@ -16,7 +16,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}</ProjectGuid>
+    <ProjectGuid>{39E66331-B874-9DC9-F2DA-1A059544237C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,6 +59,9 @@
     <Compile Include="Assets\Scripts\CharacterClasses\BaseCharacterClass.cs" />
     <Compile Include="Assets\Scripts\CharacterClasses\BaseMageClass.cs" />
     <Compile Include="Assets\Scripts\CharacterClasses\BaseWarriorClass.cs" />
+    <Compile Include="Assets\Scripts\Items\BaseItem.cs" />
+    <Compile Include="Assets\Scripts\Items\BaseStatItem.cs" />
+    <Compile Include="Assets\Scripts\Items\BaseWeapon.cs" />
     <Compile Include="Assets\Scripts\TestGUI.cs" />
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
