@@ -29,5 +29,5 @@ public class BaseWeapon : BaseStatItem
         set { spellEffectID = value; }
     }
 
-    
+
 }

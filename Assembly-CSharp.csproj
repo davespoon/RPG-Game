@@ -59,7 +59,10 @@
     <Compile Include="Assets\Scripts\CharacterClasses\BaseCharacterClass.cs" />
     <Compile Include="Assets\Scripts\CharacterClasses\BaseMageClass.cs" />
     <Compile Include="Assets\Scripts\CharacterClasses\BaseWarriorClass.cs" />
+    <Compile Include="Assets\Scripts\Items\BaseEquipment.cs" />
     <Compile Include="Assets\Scripts\Items\BaseItem.cs" />
+    <Compile Include="Assets\Scripts\Items\BasePotion.cs" />
+    <Compile Include="Assets\Scripts\Items\BaseScroll.cs" />
     <Compile Include="Assets\Scripts\Items\BaseStatItem.cs" />
     <Compile Include="Assets\Scripts\Items\BaseWeapon.cs" />
     <Compile Include="Assets\Scripts\TestGUI.cs" />
