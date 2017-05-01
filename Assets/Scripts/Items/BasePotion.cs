@@ -1,32 +1,31 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class BasePotion : BaseStatItem
+﻿namespace Items
 {
-    public enum PotionTypes
+    public class BasePotion : BaseStatItem
     {
-        HEALTH,
-        ENERGY,
-        STRENGTH,
-        INETELLECT,
-        VITALITY,
-        ENDURANCE,
-        SPEED
-    }
+        public enum PotionTypes
+        {
+            HEALTH,
+            ENERGY,
+            STRENGTH,
+            INETELLECT,
+            VITALITY,
+            ENDURANCE,
+            SPEED
+        }
 
-    private PotionTypes potionType;
-    private int spellEffectID;
+        private PotionTypes potionType;
+        private int spellEffectID;
 
-    public PotionTypes PotionType
-    {
-        get { return potionType; }
-        set { potionType = value; }
-    }
+        public PotionTypes PotionType
+        {
+            get { return potionType; }
+            set { potionType = value; }
+        }
 
-    public int SpellEffectId
-    {
-        get { return spellEffectID; }
-        set { spellEffectID = value; }
+        public int SpellEffectId
+        {
+            get { return spellEffectID; }
+            set { spellEffectID = value; }
+        }
     }
 }

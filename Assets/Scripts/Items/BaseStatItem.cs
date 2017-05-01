@@ -1,35 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class BaseStatItem : BaseItem
+﻿namespace Items
 {
-    private int stamina;
-    private int endurance;
-    private int strength;
-    private int intellect;
-
-    public int Stamina
+    public class BaseStatItem : BaseItem
     {
-        get { return stamina; }
-        set { stamina = value; }
-    }
+        private int stamina;
+        private int endurance;
+        private int strength;
+        private int intellect;
 
-    public int Endurance
-    {
-        get { return endurance; }
-        set { endurance = value; }
-    }
+        public int Stamina
+        {
+            get { return stamina; }
+            set { stamina = value; }
+        }
 
-    public int Strength
-    {
-        get { return strength; }
-        set { strength = value; }
-    }
+        public int Endurance
+        {
+            get { return endurance; }
+            set { endurance = value; }
+        }
 
-    public int Intellect
-    {
-        get { return intellect; }
-        set { intellect = value; }
+        public int Strength
+        {
+            get { return strength; }
+            set { strength = value; }
+        }
+
+        public int Intellect
+        {
+            get { return intellect; }
+            set { intellect = value; }
+        }
     }
 }

@@ -1,14 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class BaseScroll : BaseItem
+﻿namespace Items
 {
-    private int spellEffectID;
-
-    public int SpellEffectId
+    public class BaseScroll : BaseItem
     {
-        get { return spellEffectID; }
-        set { spellEffectID = value; }
+        private int spellEffectID;
+
+        public int SpellEffectId
+        {
+            get { return spellEffectID; }
+            set { spellEffectID = value; }
+        }
     }
 }
