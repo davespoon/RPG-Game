@@ -4,31 +4,31 @@ namespace Items
 {
     public class CreateNewWeapon : MonoBehaviour
     {
-        private BaseWeapon newWeapon;
+        private BaseWeapon _newWeapon;
 
         void Start()
         {
             CreateWeapon();
-            Debug.Log(newWeapon.ItemDescription);
-            Debug.Log("Weapon name: " + newWeapon.ItemName);
-            Debug.Log("Weapon ID: " + newWeapon.ItemID);
-            Debug.Log("Weapon type: " + newWeapon.WeaponType);
-            Debug.Log("Weapon stamina: " + newWeapon.Stamina);
-            Debug.Log("Weapon endurance: " + newWeapon.Endurance);
+            Debug.Log(_newWeapon.ItemDescription);
+            Debug.Log("Weapon name: " + _newWeapon.ItemName);
+            Debug.Log("Weapon ID: " + _newWeapon.ItemId);
+            Debug.Log("Weapon type: " + _newWeapon.WeaponType);
+            Debug.Log("Weapon stamina: " + _newWeapon.Stamina);
+            Debug.Log("Weapon endurance: " + _newWeapon.Endurance);
         }
 
 
         public void CreateWeapon()
         {
-            newWeapon = new BaseWeapon
+            _newWeapon = new BaseWeapon
             {
                 ItemName = "W" + Random.Range(1, 101),
                 ItemDescription = "This is a new Weapon.",
-                ItemID = Random.Range(1, 101),
+                ItemId = Random.Range(1, 101),
                 Stamina = Random.Range(1, 11),
                 Endurance = Random.Range(1, 11),
                 Strength = Random.Range(1, 11),
-                SpellEffectID = Random.Range(1, 11)
+                SpellEffectId = Random.Range(1, 11)
             };
             ChooseWeaponType();
         }
@@ -40,22 +40,22 @@ namespace Items
             switch (randomTemp)
             {
                 case 1:
-                    newWeapon.WeaponType = BaseWeapon.WeaponTypes.SWORD;
+                    _newWeapon.WeaponType = BaseWeapon.WeaponTypes.Sword;
                     break;
                 case 2:
-                    newWeapon.WeaponType = BaseWeapon.WeaponTypes.STAFF;
+                    _newWeapon.WeaponType = BaseWeapon.WeaponTypes.Staff;
                     break;
                 case 3:
-                    newWeapon.WeaponType = BaseWeapon.WeaponTypes.DAGGER;
+                    _newWeapon.WeaponType = BaseWeapon.WeaponTypes.Dagger;
                     break;
                 case 4:
-                    newWeapon.WeaponType = BaseWeapon.WeaponTypes.BOW;
+                    _newWeapon.WeaponType = BaseWeapon.WeaponTypes.Bow;
                     break;
                 case 5:
-                    newWeapon.WeaponType = BaseWeapon.WeaponTypes.SHIELD;
+                    _newWeapon.WeaponType = BaseWeapon.WeaponTypes.Shield;
                     break;
                 case 6:
-                    newWeapon.WeaponType = BaseWeapon.WeaponTypes.POLEARM;
+                    _newWeapon.WeaponType = BaseWeapon.WeaponTypes.Polearm;
                     break;
             }
         }

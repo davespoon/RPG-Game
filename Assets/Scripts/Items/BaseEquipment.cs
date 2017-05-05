@@ -4,29 +4,18 @@
     {
         public enum EquipmentTypes
         {
-            HEAD,
-            CHEST,
-            SHOULDERS,
-            LEGS,
-            FEET,
-            NECK,
-            EARRING,
-            RING
+            Head,
+            Chest,
+            Shoulders,
+            Legs,
+            Feet,
+            Neck,
+            Earring,
+            Ring
         }
 
-        private EquipmentTypes equipmentType;
-        private int spellEffectID;
+        public EquipmentTypes EquipmentType { get; set; }
 
-        public EquipmentTypes EquipmentType
-        {
-            get { return equipmentType; }
-            set { equipmentType = value; }
-        }
-
-        public int SpellEffectID
-        {
-            get { return spellEffectID; }
-            set { spellEffectID = value; }
-        }
+        public int SpellEffectId { get; set; }
     }
 }

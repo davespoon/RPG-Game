@@ -1,50 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class BaseCharacterClass
+﻿namespace CharacterClasses
 {
-    private string characterClassName;
-    private string characterClassDescription;
-
-    private int stamina;
-    private int endurance;
-    private int strength;
-    private int intellect;
-
-    public string CharacterClassName
+    public class BaseCharacterClass
     {
-        get { return characterClassName; }
-        set { characterClassName = value; }
-    }
+        public string CharacterClassName { get; set; }
 
-    public string CharacterClassDescription
-    {
-        get { return characterClassDescription; }
-        set { characterClassDescription = value; }
-    }
+        public string CharacterClassDescription { get; set; }
 
-    public int Stamina
-    {
-        get { return stamina; }
-        set { stamina = value; }
-    }
+        public int Stamina { get; set; }
 
-    public int Endurance
-    {
-        get { return endurance; }
-        set { endurance = value; }
-    }
+        public int Endurance { get; set; }
 
-    public int Strength
-    {
-        get { return strength; }
-        set { strength = value; }
-    }
+        public int Strength { get; set; }
 
-    public int Intellect
-    {
-        get { return intellect; }
-        set { intellect = value; }
+        public int Intellect { get; set; }
     }
 }

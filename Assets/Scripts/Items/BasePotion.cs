@@ -4,28 +4,17 @@
     {
         public enum PotionTypes
         {
-            HEALTH,
-            ENERGY,
-            STRENGTH,
-            INETELLECT,
-            VITALITY,
-            ENDURANCE,
-            SPEED
+            Health,
+            Energy,
+            Strength,
+            Inetellect,
+            Vitality,
+            Endurance,
+            Speed
         }
 
-        private PotionTypes potionType;
-        private int spellEffectID;
+        public PotionTypes PotionType { get; set; }
 
-        public PotionTypes PotionType
-        {
-            get { return potionType; }
-            set { potionType = value; }
-        }
-
-        public int SpellEffectId
-        {
-            get { return spellEffectID; }
-            set { spellEffectID = value; }
-        }
+        public int SpellEffectId { get; set; }
     }
 }

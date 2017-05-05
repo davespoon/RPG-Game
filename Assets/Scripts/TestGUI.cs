@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using CharacterClasses;
 using UnityEngine;
 
 public class TestGUI : MonoBehaviour

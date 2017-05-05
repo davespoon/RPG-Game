@@ -4,29 +4,16 @@
     {
         public enum WeaponTypes
         {
-            SWORD,
-            STAFF,
-            DAGGER,
-            BOW,
-            SHIELD,
-            POLEARM
+            Sword,
+            Staff,
+            Dagger,
+            Bow,
+            Shield,
+            Polearm
         }
 
-        private WeaponTypes weaponType;
-        private int spellEffectID;
+        public WeaponTypes WeaponType { get; set; }
 
-        public WeaponTypes WeaponType
-        {
-            get { return weaponType; }
-            set { weaponType = value; }
-        }
-
-        public int SpellEffectID
-        {
-            get { return spellEffectID; }
-            set { spellEffectID = value; }
-        }
-
-
+        public int SpellEffectId { get; set; }
     }
 }
