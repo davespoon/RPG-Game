@@ -4,7 +4,7 @@
     <unityVersion>5.6.0f3</unityVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <unityProcessId>4204</unityProcessId>
+    <unityProcessId>4428</unityProcessId>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>4</LangVersion>
@@ -65,11 +65,12 @@
     <Compile Include="Assets\Scripts\Items\BaseScroll.cs" />
     <Compile Include="Assets\Scripts\Items\BaseStatItem.cs" />
     <Compile Include="Assets\Scripts\Items\BaseWeapon.cs" />
-    <Compile Include="Assets\Scripts\Items\CreateNewPotion.cs" />
     <Compile Include="Assets\Scripts\Items\CreateNewEquipment.cs" />
+    <Compile Include="Assets\Scripts\Items\CreateNewPotion.cs" />
     <Compile Include="Assets\Scripts\Items\CreateNewScroll.cs" />
     <Compile Include="Assets\Scripts\Items\CreateNewWeapon.cs" />
     <Compile Include="Assets\Scripts\TestGUI.cs" />
+    <Compile Include="Assets\Scripts\TurnBasedCombat\TurnBasedCombat.cs" />
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
