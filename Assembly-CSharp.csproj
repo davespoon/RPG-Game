@@ -4,7 +4,7 @@
     <unityVersion>5.6.0f3</unityVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <unityProcessId>4428</unityProcessId>
+    <unityProcessId>1168</unityProcessId>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>4</LangVersion>
@@ -56,9 +56,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BasePlayer\BasePlayer.cs" />
     <Compile Include="Assets\Scripts\CharacterClasses\BaseCharacterClass.cs" />
     <Compile Include="Assets\Scripts\CharacterClasses\BaseMageClass.cs" />
     <Compile Include="Assets\Scripts\CharacterClasses\BaseWarriorClass.cs" />
+    <Compile Include="Assets\Scripts\CreatePlayer\CreateNewCharacter.cs" />
     <Compile Include="Assets\Scripts\Items\BaseEquipment.cs" />
     <Compile Include="Assets\Scripts\Items\BaseItem.cs" />
     <Compile Include="Assets\Scripts\Items\BasePotion.cs" />
