@@ -4,7 +4,7 @@
     <unityVersion>5.6.0f3</unityVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <unityProcessId>2948</unityProcessId>
+    <unityProcessId>3016</unityProcessId>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>4</LangVersion>
@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\CharacterClasses\BaseMageClass.cs" />
     <Compile Include="Assets\Scripts\CharacterClasses\BaseWarriorClass.cs" />
     <Compile Include="Assets\Scripts\CreatePlayer\CreateNewCharacter.cs" />
+    <Compile Include="Assets\Scripts\GameInformation\GameInformation.cs" />
     <Compile Include="Assets\Scripts\Items\BaseEquipment.cs" />
     <Compile Include="Assets\Scripts\Items\BaseItem.cs" />
     <Compile Include="Assets\Scripts\Items\BasePotion.cs" />
@@ -71,6 +72,8 @@
     <Compile Include="Assets\Scripts\Items\CreateNewPotion.cs" />
     <Compile Include="Assets\Scripts\Items\CreateNewScroll.cs" />
     <Compile Include="Assets\Scripts\Items\CreateNewWeapon.cs" />
+    <Compile Include="Assets\Scripts\SavingAndLoading\LoadInformation.cs" />
+    <Compile Include="Assets\Scripts\SavingAndLoading\SaveInformation.cs" />
     <Compile Include="Assets\Scripts\TestGUI.cs" />
     <Compile Include="Assets\Scripts\TurnBasedCombat\TurnBasedCombat.cs" />
     <Reference Include="UnityEngine.UI">
