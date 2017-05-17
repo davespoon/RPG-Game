@@ -43,6 +43,8 @@ namespace CreatePlayer
                 _newPlayer.Intellect = _newPlayer.PlayerClass.Intellect;
                 _newPlayer.Strenght = _newPlayer.PlayerClass.Strength;
 
+                SaveInformation.SaveAllInformation();
+
                 Debug.Log("Player Name: " + _newPlayer.PlayerName);
                 Debug.Log("Player class: " + _newPlayer.PlayerClass.CharacterClassName);
                 Debug.Log("Player level: " + _newPlayer.PlayerLevel);

@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class LoadInformation : MonoBehaviour
 {
-    void Start()
+    public static void LoadAllInformation()
     {
-    }
-
-    void Update()
-    {
+        GameInformation.PlayerName = PlayerPrefs.GetString("PlayerName");
+        GameInformation.PlayerLevel = PlayerPrefs.GetInt("PlayerLevel");
+        GameInformation.Stamina = PlayerPrefs.GetInt("Stamina");
+        GameInformation.Intellect = PlayerPrefs.GetInt("Intellect");
+        GameInformation.Strength = PlayerPrefs.GetInt("Strength");
+        GameInformation.Endurance = PlayerPrefs.GetInt("Endurance");
     }
 }
