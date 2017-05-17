@@ -8,7 +8,7 @@ public class SavingAndLoading : MonoBehaviour
     {
         PlayerPrefs.SetInt("PlayerLevel", GameInformation.PlayerLevel);
         PlayerPrefs.SetString("PlayerName", GameInformation.PlayerName);
-        PlayerPrefs.SetString("PlayerName", GameInformation.PlayerName);
-
+        PlayerPrefs.SetInt("Stamina", GameInformation.Stamina);
+        PlayerPrefs.SetInt("Endurance", GameInformation.Endurance);
     }
 }

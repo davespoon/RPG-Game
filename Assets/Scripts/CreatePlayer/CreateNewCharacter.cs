@@ -11,13 +11,11 @@ namespace CreatePlayer
         private bool _isWarrriorClass;
         private string _playerName = "Player-Bla-Bla";
 
-        // Use this for initialization
         void Start()
         {
             _newPlayer = new BasePlayer();
         }
 
-        // Update is called once per frame
         void Update()
         {
         }
