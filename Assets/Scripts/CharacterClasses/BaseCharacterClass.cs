@@ -1,4 +1,4 @@
-﻿namespace CharacterClasses
+﻿namespace Assets.Scripts.CharacterClasses
 {
     public class BaseCharacterClass
     {
@@ -8,7 +8,7 @@
 
         public int Stamina { get; set; }
 
-        public int Endurance { get; set; }
+        public int Dexterity { get; set; }
 
         public int Strength { get; set; }
 

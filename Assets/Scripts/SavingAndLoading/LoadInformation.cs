@@ -1,16 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class LoadInformation : MonoBehaviour
+namespace Assets.Scripts.SavingAndLoading
 {
-    public static void LoadAllInformation()
+    public class LoadInformation : MonoBehaviour
     {
-        GameInformation.PlayerName = PlayerPrefs.GetString("PlayerName");
-        GameInformation.PlayerLevel = PlayerPrefs.GetInt("PlayerLevel");
-        GameInformation.Stamina = PlayerPrefs.GetInt("Stamina");
-        GameInformation.Intellect = PlayerPrefs.GetInt("Intellect");
-        GameInformation.Strength = PlayerPrefs.GetInt("Strength");
-        GameInformation.Endurance = PlayerPrefs.GetInt("Endurance");
+        public static void LoadAllInformation()
+        {
+            GameInformation.GameInformation.PlayerName = PlayerPrefs.GetString("PlayerName");
+            GameInformation.GameInformation.PlayerLevel = PlayerPrefs.GetInt("PlayerLevel");
+            GameInformation.GameInformation.Stamina = PlayerPrefs.GetInt("Stamina");
+            GameInformation.GameInformation.Intellect = PlayerPrefs.GetInt("Intellect");
+            GameInformation.GameInformation.Strength = PlayerPrefs.GetInt("Strength");
+            GameInformation.GameInformation.Dexterity = PlayerPrefs.GetInt("Dexterity");
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Items
+﻿namespace Assets.Scripts.Items
 {
     public class BaseScroll : BaseItem
     {

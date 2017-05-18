@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Items
+namespace Assets.Scripts.Items
 {
     public class CreateNewEquipment : MonoBehaviour
     {
@@ -16,7 +16,7 @@ namespace Items
             Debug.Log("Equipment ID: " + _newEquipment.ItemId);
             Debug.Log("Equipment type: " + _newEquipment.EquipmentType);
             Debug.Log("Equipment stamina: " + _newEquipment.Stamina);
-            Debug.Log("Equipment endurance: " + _newEquipment.Endurance);
+            Debug.Log("Equipment endurance: " + _newEquipment.Dexterity);
         }
 
         private void CreateEquipment()
@@ -26,7 +26,7 @@ namespace Items
                 ItemName = _itemNames[Random.Range(0, 3)] + " Item",
                 ItemId = Random.Range(0, 101),
                 Stamina = Random.Range(1, 11),
-                Endurance = Random.Range(1, 11),
+                Dexterity = Random.Range(1, 11),
                 Strength = Random.Range(1, 11),
                 SpellEffectId = Random.Range(1, 11),
                 ItemDescription = _itemDescription[Random.Range(0, _itemDescription.Length)]

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Items
+namespace Assets.Scripts.Items
 {
     public class CreateNewPotion : MonoBehaviour
     {
@@ -16,7 +16,7 @@ namespace Items
             Debug.Log("Equipment ID: " + _newPotion.ItemId);
             Debug.Log("Equipment type: " + _newPotion.PotionType);
             Debug.Log("Equipment stamina: " + _newPotion.Stamina);
-            Debug.Log("Equipment endurance: " + _newPotion.Endurance);
+            Debug.Log("Equipment endurance: " + _newPotion.Dexterity);
         }
 
         private void CreatePotion()
@@ -26,7 +26,7 @@ namespace Items
                 ItemName = _potionNames[Random.Range(0, 3)] + " Potion",
                 ItemId = Random.Range(0, 101),
                 Stamina = Random.Range(1, 11),
-                Endurance = Random.Range(1, 11),
+                Dexterity = Random.Range(1, 11),
                 Strength = Random.Range(1, 11),
                 SpellEffectId = Random.Range(1, 11),
                 ItemDescription = _potionDescription[Random.Range(0, _potionDescription.Length)]
@@ -40,7 +40,7 @@ namespace Items
             switch (randomTypeTemp)
             {
                 case 1:
-                    _newPotion.PotionType = BasePotion.PotionTypes.Endurance;
+                    _newPotion.PotionType = BasePotion.PotionTypes.Dexterity;
                     break;
                 case 2:
                     _newPotion.PotionType = BasePotion.PotionTypes.Energy;

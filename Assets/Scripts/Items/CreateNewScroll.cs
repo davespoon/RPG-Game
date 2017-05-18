@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Items
+namespace Assets.Scripts.Items
 {
     public class CreateNewScroll : MonoBehaviour
     {

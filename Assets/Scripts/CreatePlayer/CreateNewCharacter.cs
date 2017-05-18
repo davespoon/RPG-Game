@@ -1,11 +1,12 @@
-﻿using CharacterClasses;
+﻿using Assets.Scripts.CharacterClasses;
+using Assets.Scripts.SavingAndLoading;
 using UnityEngine;
 
-namespace CreatePlayer
+namespace Assets.Scripts.CreatePlayer
 {
     public class CreateNewCharacter : MonoBehaviour
     {
-        private BasePlayer _newPlayer;
+        private BasePlayer.BasePlayer _newPlayer;
 
         private bool _isMageClass;
         private bool _isWarrriorClass;
@@ -13,7 +14,7 @@ namespace CreatePlayer
 
         void Start()
         {
-            _newPlayer = new BasePlayer();
+            _newPlayer = new BasePlayer.BasePlayer();
         }
 
         void Update()
@@ -39,7 +40,7 @@ namespace CreatePlayer
                 _newPlayer.PlayerName = _playerName;
                 _newPlayer.PlayerLevel = 1;
                 _newPlayer.Stamina = _newPlayer.PlayerClass.Stamina;
-                _newPlayer.Endurance = _newPlayer.PlayerClass.Endurance;
+                _newPlayer.Dexterity = _newPlayer.PlayerClass.Dexterity;
                 _newPlayer.Intellect = _newPlayer.PlayerClass.Intellect;
                 _newPlayer.Strenght = _newPlayer.PlayerClass.Strength;
 

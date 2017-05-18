@@ -1,4 +1,4 @@
-﻿namespace Items
+﻿namespace Assets.Scripts.Items
 {
     public class BasePotion : BaseStatItem
     {
@@ -9,7 +9,7 @@
             Strength,
             Inetellect,
             Vitality,
-            Endurance,
+            Dexterity,
             Speed
         }
 

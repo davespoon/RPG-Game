@@ -1,21 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using CharacterClasses;
+﻿using Assets.Scripts.CharacterClasses;
 using UnityEngine;
 
-public class TestGUI : MonoBehaviour
+namespace Assets.Scripts
 {
-    private BaseCharacterClass classPrimo = new BaseMageClass();
-    private BaseCharacterClass classSecundo = new BaseWarriorClass();
-
-    private void OnGUI()
+    public class TestGui : MonoBehaviour
     {
-        GUILayout.Label(classPrimo.CharacterClassName);
-        GUILayout.Label(classPrimo.CharacterClassDescription);
-        GUILayout.Label(classPrimo.Intellect.ToString());
+        private BaseCharacterClass classPrimo = new BaseMageClass();
+        private BaseCharacterClass classSecundo = new BaseWarriorClass();
+
+        private void OnGUI()
+        {
+            GUILayout.Label(classPrimo.CharacterClassName);
+            GUILayout.Label(classPrimo.CharacterClassDescription);
+            GUILayout.Label(classPrimo.Intellect.ToString());
 
 
-        GUILayout.Label(classSecundo.CharacterClassName);
-        GUILayout.Label(classSecundo.CharacterClassDescription);
+            GUILayout.Label(classSecundo.CharacterClassName);
+            GUILayout.Label(classSecundo.CharacterClassDescription);
+        }
     }
 }

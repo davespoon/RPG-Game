@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace TurnBasedCombat
+namespace Assets.Scripts.TurnBasedCombat
 {
     public class TurnBasedCombat : MonoBehaviour
     {

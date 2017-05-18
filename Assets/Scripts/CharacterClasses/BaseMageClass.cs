@@ -1,4 +1,4 @@
-﻿namespace CharacterClasses
+﻿namespace Assets.Scripts.CharacterClasses
 {
     public class BaseMageClass : BaseCharacterClass
     {
@@ -7,7 +7,7 @@
             CharacterClassName = "Mage";
             CharacterClassDescription = "A wise wizard, can cast spells.";
             Stamina = 12;
-            Endurance = 14;
+            Dexterity = 14;
             Strength = 10;
             Intellect = 15;
         }

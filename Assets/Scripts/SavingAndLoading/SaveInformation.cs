@@ -1,18 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class SaveInformation : MonoBehaviour
+namespace Assets.Scripts.SavingAndLoading
 {
-    public static void SaveAllInformation()
+    public class SaveInformation : MonoBehaviour
     {
-        PlayerPrefs.SetString("PlayerName", GameInformation.PlayerName);
-        PlayerPrefs.SetInt("PlayerLevel", GameInformation.PlayerLevel);
-        PlayerPrefs.SetInt("Stamina", GameInformation.Stamina);
-        PlayerPrefs.SetInt("Intellect", GameInformation.Intellect);
-        PlayerPrefs.SetInt("Strength", GameInformation.Strength);
-        PlayerPrefs.SetInt("Endurance", GameInformation.Endurance);
+        public static void SaveAllInformation()
+        {
+            PlayerPrefs.SetString("PlayerName", GameInformation.GameInformation.PlayerName);
+            PlayerPrefs.SetInt("PlayerLevel", GameInformation.GameInformation.PlayerLevel);
+            PlayerPrefs.SetInt("Stamina", GameInformation.GameInformation.Stamina);
+            PlayerPrefs.SetInt("Intellect", GameInformation.GameInformation.Intellect);
+            PlayerPrefs.SetInt("Strength", GameInformation.GameInformation.Strength);
+            PlayerPrefs.SetInt("Dexterity", GameInformation.GameInformation.Dexterity);
 
-        Debug.Log("SAVED ALL INFORMATION");
+            Debug.Log("SAVED ALL INFORMATION");
+        }
     }
 }
