@@ -1,6 +1,4 @@
-﻿using Assets.Scripts.CharacterClasses;
-
-public class BasePlayer
+﻿public class BasePlayer
 {
     public string PlayerName { get; set; }
     public int PlayerLevel { get; set; }

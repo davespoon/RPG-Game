@@ -1,6 +1,4 @@
-﻿using Assets.Scripts.CharacterClasses;
-
-public class BaseArcherClass : BaseCharacterClass
+﻿public class BaseArcherClass : BaseCharacterClass
 {
     public BaseArcherClass()
     {

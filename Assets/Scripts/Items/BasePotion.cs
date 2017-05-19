@@ -1,6 +1,4 @@
-﻿using Assets.Scripts.Items;
-
-public class BasePotion : BaseStatItem
+﻿public class BasePotion : BaseStatItem
 {
     public enum PotionTypes
     {

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CreateNewCharacter : MonoBehaviour
 {
@@ -6,7 +7,7 @@ public class CreateNewCharacter : MonoBehaviour
 
     private bool _isMageClass;
     private bool _isWarrriorClass;
-    private string _playerName = "Player-Bla-Bla";
+    private string _playerName = "Enter Name";
 
     void Start()
     {
@@ -40,11 +41,27 @@ public class CreateNewCharacter : MonoBehaviour
             _newPlayer.Intellect = _newPlayer.PlayerClass.Intellect;
             _newPlayer.Strenght = _newPlayer.PlayerClass.Strength;
 
+            StoreNewPlayerInfo();
             SaveInformation.SaveAllInformation();
 
             Debug.Log("Player Name: " + _newPlayer.PlayerName);
             Debug.Log("Player class: " + _newPlayer.PlayerClass.CharacterClassName);
             Debug.Log("Player level: " + _newPlayer.PlayerLevel);
         }
+
+        if (GUILayout.Button("Load"))
+        {
+            SceneManager.LoadScene("tSet");
+        }
+    }
+
+    private void StoreNewPlayerInfo()
+    {
+        GameInformation.PlayerName = _newPlayer.PlayerName;
+        GameInformation.PlayerLevel = _newPlayer.PlayerLevel;
+        GameInformation.Stamina = _newPlayer.Stamina;
+        GameInformation.Dexterity = _newPlayer.Dexterity;
+        GameInformation.Intellect = _newPlayer.Intellect;
+        GameInformation.Strength = _newPlayer.Strenght;
     }
 }

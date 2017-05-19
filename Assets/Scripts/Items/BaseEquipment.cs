@@ -1,6 +1,4 @@
-﻿using Assets.Scripts.Items;
-
-public class BaseEquipment : BaseStatItem
+﻿public class BaseEquipment : BaseStatItem
 {
     public enum EquipmentTypes
     {

@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 
-
 public class GameInformation : MonoBehaviour
 {
     public static string PlayerName { get; set; }
