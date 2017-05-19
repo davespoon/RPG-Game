@@ -1,15 +1,14 @@
-﻿namespace Assets.Scripts.CharacterClasses
+﻿using Assets.Scripts.CharacterClasses;
+
+public class BaseArcherClass : BaseCharacterClass
 {
-    public class BaseArcherClass : BaseCharacterClass
+    public BaseArcherClass()
     {
-        public BaseArcherClass()
-        {
-            CharacterClassDescription = "On-target deft Archer";
-            CharacterClassName = "Archer";
-            Dexterity = 16;
-            Intellect = 10;
-            Stamina = 12;
-            Strength = 12;
-        }
+        CharacterClassDescription = "On-target deft Archer";
+        CharacterClassName = "Archer";
+        Dexterity = 16;
+        Intellect = 10;
+        Stamina = 12;
+        Strength = 12;
     }
 }

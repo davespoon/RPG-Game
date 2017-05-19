@@ -1,19 +1,16 @@
-﻿namespace Assets.Scripts.Items
+﻿public class BaseWeapon : BaseStatItem
 {
-    public class BaseWeapon : BaseStatItem
+    public enum WeaponTypes
     {
-        public enum WeaponTypes
-        {
-            Sword,
-            Staff,
-            Dagger,
-            Bow,
-            Shield,
-            Polearm
-        }
-
-        public WeaponTypes WeaponType { get; set; }
-
-        public int SpellEffectId { get; set; }
+        Sword,
+        Staff,
+        Dagger,
+        Bow,
+        Shield,
+        Polearm
     }
+
+    public WeaponTypes WeaponType { get; set; }
+
+    public int SpellEffectId { get; set; }
 }

@@ -1,20 +1,19 @@
-﻿namespace Assets.Scripts.Items
+﻿using Assets.Scripts.Items;
+
+public class BasePotion : BaseStatItem
 {
-    public class BasePotion : BaseStatItem
+    public enum PotionTypes
     {
-        public enum PotionTypes
-        {
-            Health,
-            Energy,
-            Strength,
-            Inetellect,
-            Vitality,
-            Dexterity,
-            Speed
-        }
-
-        public PotionTypes PotionType { get; set; }
-
-        public int SpellEffectId { get; set; }
+        Health,
+        Energy,
+        Strength,
+        Inetellect,
+        Vitality,
+        Dexterity,
+        Speed
     }
+
+    public PotionTypes PotionType { get; set; }
+
+    public int SpellEffectId { get; set; }
 }

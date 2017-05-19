@@ -1,22 +1,18 @@
-﻿using Assets.Scripts.CharacterClasses;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Assets.Scripts
+public class TestGui : MonoBehaviour
 {
-    public class TestGui : MonoBehaviour
+    private BaseCharacterClass classPrimo = new BaseMageClass();
+    private BaseCharacterClass classSecundo = new BaseWarriorClass();
+
+    private void OnGUI()
     {
-        private BaseCharacterClass classPrimo = new BaseMageClass();
-        private BaseCharacterClass classSecundo = new BaseWarriorClass();
-
-        private void OnGUI()
-        {
-            GUILayout.Label(classPrimo.CharacterClassName);
-            GUILayout.Label(classPrimo.CharacterClassDescription);
-            GUILayout.Label(classPrimo.Intellect.ToString());
+        GUILayout.Label(classPrimo.CharacterClassName);
+        GUILayout.Label(classPrimo.CharacterClassDescription);
+        GUILayout.Label(classPrimo.Intellect.ToString());
 
 
-            GUILayout.Label(classSecundo.CharacterClassName);
-            GUILayout.Label(classSecundo.CharacterClassDescription);
-        }
+        GUILayout.Label(classSecundo.CharacterClassName);
+        GUILayout.Label(classSecundo.CharacterClassDescription);
     }
 }

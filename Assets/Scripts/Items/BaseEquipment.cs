@@ -1,21 +1,20 @@
-﻿namespace Assets.Scripts.Items
+﻿using Assets.Scripts.Items;
+
+public class BaseEquipment : BaseStatItem
 {
-    public class BaseEquipment : BaseStatItem
+    public enum EquipmentTypes
     {
-        public enum EquipmentTypes
-        {
-            Head,
-            Chest,
-            Shoulders,
-            Legs,
-            Feet,
-            Neck,
-            Earring,
-            Ring
-        }
-
-        public EquipmentTypes EquipmentType { get; set; }
-
-        public int SpellEffectId { get; set; }
+        Head,
+        Chest,
+        Shoulders,
+        Legs,
+        Feet,
+        Neck,
+        Earring,
+        Ring
     }
+
+    public EquipmentTypes EquipmentType { get; set; }
+
+    public int SpellEffectId { get; set; }
 }

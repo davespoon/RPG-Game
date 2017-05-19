@@ -1,7 +1,4 @@
-﻿namespace Assets.Scripts.Items
+﻿public class BaseScroll : BaseItem
 {
-    public class BaseScroll : BaseItem
-    {
-        public int SpellEffectId { get; set; }
-    }
+    public int SpellEffectId { get; set; }
 }
