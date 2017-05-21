@@ -51,7 +51,8 @@ public class CreateNewCharacter : MonoBehaviour
 
         if (GUILayout.Button("Load"))
         {
-            SceneManager.LoadScene("tSet");
+            //LoadInformation.LoadAllInformation();
+            SceneManager.LoadScene("TestLoading");
         }
     }
 

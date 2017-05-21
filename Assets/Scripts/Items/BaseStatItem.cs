@@ -1,4 +1,5 @@
-﻿public class BaseStatItem : BaseItem
+﻿[System.Serializable]
+public class BaseStatItem : BaseItem
 {
     public int Stamina { get; set; }
 

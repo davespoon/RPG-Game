@@ -1,4 +1,5 @@
-﻿public class BaseItem
+﻿[System.Serializable]
+public class BaseItem
 {
     public enum ItemTypes
     {

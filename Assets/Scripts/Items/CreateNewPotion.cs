@@ -26,6 +26,7 @@ public class CreateNewPotion : MonoBehaviour
             Stamina = Random.Range(1, 11),
             Dexterity = Random.Range(1, 11),
             Strength = Random.Range(1, 11),
+            Intellect = Random.Range(1, 11),
             SpellEffectId = Random.Range(1, 11),
             ItemDescription = _potionDescription[Random.Range(0, _potionDescription.Length)]
         };

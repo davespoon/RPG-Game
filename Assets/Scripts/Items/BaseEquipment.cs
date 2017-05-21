@@ -1,4 +1,5 @@
-﻿public class BaseEquipment : BaseStatItem
+﻿[System.Serializable]
+public class BaseEquipment : BaseStatItem
 {
     public enum EquipmentTypes
     {

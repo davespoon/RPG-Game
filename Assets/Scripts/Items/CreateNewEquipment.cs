@@ -26,6 +26,7 @@ public class CreateNewEquipment : MonoBehaviour
             Stamina = Random.Range(1, 11),
             Dexterity = Random.Range(1, 11),
             Strength = Random.Range(1, 11),
+            Intellect = Random.Range(1, 11),
             SpellEffectId = Random.Range(1, 11),
             ItemDescription = _itemDescription[Random.Range(0, _itemDescription.Length)]
         };
