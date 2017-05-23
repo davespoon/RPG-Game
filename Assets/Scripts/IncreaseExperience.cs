@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IncreaseExperience
+public static class IncreaseExperience
 {
     private static float _xpToGive;
 
