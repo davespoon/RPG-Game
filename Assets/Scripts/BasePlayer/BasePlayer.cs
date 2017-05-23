@@ -7,4 +7,6 @@
     public int Dexterity { get; set; }
     public int Intellect { get; set; }
     public int Strenght { get; set; }
+    public int CurrentXP { get; set; }
+    public int RequiredXP { get; set; }
 }

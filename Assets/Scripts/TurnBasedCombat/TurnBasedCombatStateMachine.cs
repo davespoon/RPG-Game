@@ -1,8 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Diagnostics;
+using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 
-public class TurnBasedCombat : MonoBehaviour
+public class TurnBasedCombatStateMachine : MonoBehaviour
 {
+    private bool _hasAddetXP = false;
+
     public enum BattleStates
     {
         Start,
@@ -16,6 +20,7 @@ public class TurnBasedCombat : MonoBehaviour
 
     void Start()
     {
+        _hasAddetXP = false;
         _currentState = BattleStates.Start;
     }
 
@@ -25,7 +30,7 @@ public class TurnBasedCombat : MonoBehaviour
         switch (_currentState)
         {
             case BattleStates.Start:
-                //setup battle function
+                //SETUP BATTLE FUNCTION
                 break;
             case BattleStates.PlayerChoice:
                 break;
@@ -34,6 +39,12 @@ public class TurnBasedCombat : MonoBehaviour
             case BattleStates.Lose:
                 break;
             case BattleStates.Win:
+                if (!_hasAddetXP)
+                {
+                    IncreaseExperience.AddExperience();
+                    _hasAddetXP = true;
+                }
+
                 break;
         }
     }
