@@ -4,10 +4,11 @@
     {
         CharacterClassName = "Mage";
         CharacterClassDescription = "A wise wizard, can cast spells.";
-        Stamina = 12;
+        Vitality = 10;
+        Intellect = 15;
+        Resitance = 12;
         Dexterity = 14;
         Strength = 10;
-        Intellect = 15;
     }
 }
 

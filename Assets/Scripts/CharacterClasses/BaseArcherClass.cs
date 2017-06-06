@@ -4,9 +4,10 @@
     {
         CharacterClassDescription = "On-target deft Archer";
         CharacterClassName = "Archer";
-        Dexterity = 16;
+        Vitality = 12;
         Intellect = 10;
-        Stamina = 12;
+        Resitance = 12;
+        Dexterity = 16;
         Strength = 12;
     }
 }

@@ -6,7 +6,7 @@ public class LoadInformation : MonoBehaviour
     {
         GameInformation.PlayerName = PlayerPrefs.GetString("PlayerName");
         GameInformation.PlayerLevel = PlayerPrefs.GetInt("PlayerLevel");
-        GameInformation.Stamina = PlayerPrefs.GetInt("Stamina");
+        GameInformation.Resistance = PlayerPrefs.GetInt("Resistance");
         GameInformation.Intellect = PlayerPrefs.GetInt("Intellect");
         GameInformation.Strength = PlayerPrefs.GetInt("Strength");
         GameInformation.Dexterity = PlayerPrefs.GetInt("Dexterity");
@@ -20,7 +20,7 @@ public class LoadInformation : MonoBehaviour
         Debug.Log("Player level is : " + GameInformation.PlayerLevel);
         Debug.Log("Player dexterity is : " + GameInformation.Dexterity);
         Debug.Log("Player intellect is : " + GameInformation.Intellect);
-        Debug.Log("Player stamina is : " + GameInformation.Stamina);
+        Debug.Log("Player stamina is : " + GameInformation.Resistance);
         Debug.Log("Player strength is : " + GameInformation.Strength);
     }
 }

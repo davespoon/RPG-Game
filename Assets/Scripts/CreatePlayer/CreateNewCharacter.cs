@@ -34,12 +34,6 @@ public class CreateNewCharacter : MonoBehaviour
             {
                 _newPlayer.PlayerClass = new BaseWarriorClass();
             }
-            _newPlayer.PlayerName = _playerName;
-            _newPlayer.PlayerLevel = 1;
-            _newPlayer.Stamina = _newPlayer.PlayerClass.Stamina;
-            _newPlayer.Dexterity = _newPlayer.PlayerClass.Dexterity;
-            _newPlayer.Intellect = _newPlayer.PlayerClass.Intellect;
-            _newPlayer.Strenght = _newPlayer.PlayerClass.Strength;
 
             StoreNewPlayerInfo();
             SaveInformation.SaveAllInformation();
@@ -60,9 +54,22 @@ public class CreateNewCharacter : MonoBehaviour
     {
         GameInformation.PlayerName = _newPlayer.PlayerName;
         GameInformation.PlayerLevel = _newPlayer.PlayerLevel;
-        GameInformation.Stamina = _newPlayer.Stamina;
-        GameInformation.Dexterity = _newPlayer.Dexterity;
+        GameInformation.Vitality = _newPlayer.Vitality;
         GameInformation.Intellect = _newPlayer.Intellect;
-        GameInformation.Strength = _newPlayer.Strenght;
+        GameInformation.Resistance = _newPlayer.Resistance;
+        GameInformation.Dexterity = _newPlayer.Dexterity;
+        GameInformation.Strength = _newPlayer.Strength;
+    }
+
+    private void CreateNewPlayer()
+    {
+        _newPlayer.PlayerName = _playerName;
+        _newPlayer.PlayerLevel = 1;
+        _newPlayer.Vitality = _newPlayer.PlayerClass.Vitality;
+        _newPlayer.Intellect = _newPlayer.PlayerClass.Intellect;
+        _newPlayer.Resistance = _newPlayer.PlayerClass.Resitance;
+        _newPlayer.Dexterity = _newPlayer.PlayerClass.Dexterity;
+        _newPlayer.Strength = _newPlayer.PlayerClass.Strength;
+        _newPlayer.Gold = 100;
     }
 }
