@@ -60,12 +60,7 @@ public class CreateNewCharacter : MonoBehaviour
         GameInformation.Resistance = _newPlayer.Resistance;
         GameInformation.Dexterity = _newPlayer.Dexterity;
         GameInformation.Strength = _newPlayer.Strength;
-<<<<<<< HEAD
         GameInformation.Gold = _newPlayer.Gold;
-
-        
-=======
->>>>>>> a493d3558f59f88378597c03a3572a5b1bf9c9be
     }
 
     private void CreateNewPlayer()
@@ -78,7 +73,6 @@ public class CreateNewCharacter : MonoBehaviour
         _newPlayer.Dexterity = _newPlayer.PlayerClass.Dexterity;
         _newPlayer.Strength = _newPlayer.PlayerClass.Strength;
         _newPlayer.Gold = 100;
-<<<<<<< HEAD
 
         Debug.Log("Player name is: " + _newPlayer.PlayerName);
         Debug.Log("Player level is : " + _newPlayer.PlayerLevel);
@@ -87,7 +81,5 @@ public class CreateNewCharacter : MonoBehaviour
         Debug.Log("Player resistance is : " + _newPlayer.Resistance);
         Debug.Log("Player strength is : " + _newPlayer.Strength);
         Debug.Log("Player gold is : " + _newPlayer.Gold);
-=======
->>>>>>> a493d3558f59f88378597c03a3572a5b1bf9c9be
     }
 }
