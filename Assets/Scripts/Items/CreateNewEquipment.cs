@@ -13,7 +13,7 @@ public class CreateNewEquipment : MonoBehaviour
         Debug.Log("Equipment name: " + _newEquipment.ItemName);
         Debug.Log("Equipment ID: " + _newEquipment.ItemId);
         Debug.Log("Equipment type: " + _newEquipment.EquipmentType);
-        Debug.Log("Equipment stamina: " + _newEquipment.Stamina);
+        Debug.Log("Equipment stamina: " + _newEquipment.Resistance);
         Debug.Log("Equipment endurance: " + _newEquipment.Dexterity);
     }
 
@@ -23,7 +23,7 @@ public class CreateNewEquipment : MonoBehaviour
         {
             ItemName = _itemNames[Random.Range(0, 3)] + " Item",
             ItemId = Random.Range(0, 101),
-            Stamina = Random.Range(1, 11),
+            Resistance = Random.Range(1, 11),
             Dexterity = Random.Range(1, 11),
             Strength = Random.Range(1, 11),
             Intellect = Random.Range(1, 11),

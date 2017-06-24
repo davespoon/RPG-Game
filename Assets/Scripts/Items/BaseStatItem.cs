@@ -1,7 +1,7 @@
 ﻿[System.Serializable]
 public class BaseStatItem : BaseItem
 {
-    public int Stamina { get; set; }
+    public int Resistance { get; set; }
 
     public int Dexterity { get; set; }
 

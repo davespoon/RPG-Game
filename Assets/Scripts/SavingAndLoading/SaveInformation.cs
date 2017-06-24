@@ -6,10 +6,11 @@ public class SaveInformation : MonoBehaviour
     {
         PlayerPrefs.SetString("PlayerName", GameInformation.PlayerName);
         PlayerPrefs.SetInt("PlayerLevel", GameInformation.PlayerLevel);
-        PlayerPrefs.SetInt("Stamina", GameInformation.Stamina);
+        PlayerPrefs.SetInt("Resistance", GameInformation.Resistance);
         PlayerPrefs.SetInt("Intellect", GameInformation.Intellect);
         PlayerPrefs.SetInt("Strength", GameInformation.Strength);
         PlayerPrefs.SetInt("Dexterity", GameInformation.Dexterity);
+        PlayerPrefs.SetFloat("Gold", GameInformation.Gold);
 
         if (GameInformation.EquipmentOne != null)
         {

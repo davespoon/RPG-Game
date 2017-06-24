@@ -13,7 +13,7 @@ public class CreateNewPotion : MonoBehaviour
         Debug.Log("Equipment name: " + _newPotion.ItemName);
         Debug.Log("Equipment ID: " + _newPotion.ItemId);
         Debug.Log("Equipment type: " + _newPotion.PotionType);
-        Debug.Log("Equipment stamina: " + _newPotion.Stamina);
+        Debug.Log("Equipment stamina: " + _newPotion.Resistance);
         Debug.Log("Equipment endurance: " + _newPotion.Dexterity);
     }
 
@@ -23,7 +23,7 @@ public class CreateNewPotion : MonoBehaviour
         {
             ItemName = _potionNames[Random.Range(0, 3)] + " Potion",
             ItemId = Random.Range(0, 101),
-            Stamina = Random.Range(1, 11),
+            Resistance = Random.Range(1, 11),
             Dexterity = Random.Range(1, 11),
             Strength = Random.Range(1, 11),
             Intellect = Random.Range(1, 11),

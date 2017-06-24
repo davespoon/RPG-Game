@@ -5,6 +5,7 @@ using UnityEngine;
 public static class IncreaseExperience
 {
     private static float _xpToGive;
+    private static LevelUp _leveUpScript = new LevelUp();
 
     public static void AddExperience()
     {
@@ -26,8 +27,7 @@ public static class IncreaseExperience
     {
         if (GameInformation.CurrentXp >= GameInformation.RequiredXp)
         {
-            //player should be leveled up
-            //CREATE LEVEL UP SCRIPT!!!
+            _leveUpScript.LevelUpCharacter();
         }
     }
 }

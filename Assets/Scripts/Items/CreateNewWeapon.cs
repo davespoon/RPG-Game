@@ -11,7 +11,7 @@ public class CreateNewWeapon : MonoBehaviour
         Debug.Log("Weapon name: " + _newWeapon.ItemName);
         Debug.Log("Weapon ID: " + _newWeapon.ItemId);
         Debug.Log("Weapon type: " + _newWeapon.WeaponType);
-        Debug.Log("Weapon stamina: " + _newWeapon.Stamina);
+        Debug.Log("Weapon stamina: " + _newWeapon.Resistance);
         Debug.Log("Weapon endurance: " + _newWeapon.Dexterity);
     }
 
@@ -23,7 +23,7 @@ public class CreateNewWeapon : MonoBehaviour
             ItemName = "W" + Random.Range(1, 101),
             ItemDescription = "This is a new Weapon.",
             ItemId = Random.Range(1, 101),
-            Stamina = Random.Range(1, 11),
+            Resistance = Random.Range(1, 11),
             Dexterity = Random.Range(1, 11),
             Strength = Random.Range(1, 11),
             Intellect = Random.Range(1, 11),
