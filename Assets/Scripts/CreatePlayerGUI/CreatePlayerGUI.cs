@@ -24,35 +24,38 @@ public class CreatePlayerGUI : MonoBehaviour
         switch (currentState)
         {
             case PlayerCreationStates.ClassSelection:
-                Debug.Log("Class selection");
+                //Debug.Log("Class selection");
                 break;
             case PlayerCreationStates.StatAlocation:
-                Debug.Log("Class selection");
+                //Debug.Log("Class selection");
                 break;
             case PlayerCreationStates.FinalSetUp:
-                Debug.Log("Class selection");
+                //Debug.Log("Class selection");
                 break;
         }
     }
 
     void OnGUI()
     {
+        displayFunctions.DisplayMainItems();
+
+
         if (currentState == PlayerCreationStates.ClassSelection)
         {
             displayFunctions.DisplayClassSelections();
-            Debug.Log("Display player selection function");
+            //Debug.Log("Display player selection function");
         }
 
         if (currentState == PlayerCreationStates.StatAlocation)
         {
             displayFunctions.DisplayStatAlocation();
-            Debug.Log("Display player stat alocation function");
+            //Debug.Log("Display player stat alocation function");
         }
 
         if (currentState == PlayerCreationStates.FinalSetUp)
         {
             displayFunctions.DisplayFinalSetUp();
-            Debug.Log("Display player final setup function");
+            ///Debug.Log("Display player final setup function");
         }
     }
 }
